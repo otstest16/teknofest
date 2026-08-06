@@ -1,6 +1,11 @@
-Teknofest_Proje/
-├── docker-compose.yml
+teknofest-tddi-2025/
+├── .gitignore
+├── LICENSE
+├── README.md
 ├── schema.sql
-├── mock_api.py
-├── ingest_faq.py
-└── requirements.txt
+├── mock_api.py          (1. Hafta)
+├── ingest_faq.py        (1. Hafta)
+├── requirements.txt     (Güncellendi)
+├── tools.py             (Yeni - LangChain Araçları)
+├── agent.py             (Yeni - LangGraph Ajan Akışı)
+└── test_agent.py        (Yeni - Bağlam Değişimi & Test Scripti)
