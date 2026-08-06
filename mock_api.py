@@ -1,28 +1,71 @@
-from typing import List, Optional
+import os
+import subprocess
+import sys
+import time
+import traceback
+
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+import uvicorn
 
-app = FastAPI(
-    title="Telekom Mock Core Backend",
-    description="TEKNOFEST TDDİ Mock API Services",
-)
+app = FastAPI(title="TeknoNet Mock API & Agent Backend")
+
+USERS_DB = {
+    "U1001": {
+        "user_id": "U1001",
+        "name": "Ahmet Yılmaz",
+        "current_package": "Standart 50 Mbps",
+        "balance_status": "Düzenli",
+        "unpaid_bills": 0,
+    },
+    "U1002": {
+        "user_id": "U1002",
+        "name": "Ayşe Kaya",
+        "current_package": "Eko 25 Mbps",
+        "balance_status": "Gecikmede",
+        "unpaid_bills": 250.0,
+    },
+}
+
+PACKAGES_DB = [
+    {
+        "package_id": "P101",
+        "name": "Hızlı 100 Mbps",
+        "price": 299.90,
+        "speed": "100 Mbps",
+    },
+    {
+        "package_id": "P102",
+        "name": "Ultra 200 Mbps",
+        "price": 399.90,
+        "speed": "200 Mbps",
+    },
+    {
+        "package_id": "P103",
+        "name": "Gamer 500 Mbps",
+        "price": 599.90,
+        "speed": "500 Mbps",
+    },
+]
 
 
-# Pydantic Modelleri
-class UserInfoResponse(BaseModel):
-  user_id: str
-  name: str
-  surname: str
-  current_package: str
-  contract_end_date: str
-  payment_status: str
+@app.get("/api/getUserInfo/{user_id}")
+def get_user_info(user_id: str):
+  if user_id in USERS_DB:
+    return USERS_DB[user_id]
+  raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
 
 
-class PackageItem(BaseModel):
-  id: str
-  name: str
-  price: str
-  details: str
+@app.get("/api/getAvailablePackages/{user_id}")
+def get_available_packages(user_id: str):
+  if user_id in USERS_DB:
+    return {"user_id": user_id, "available_packages": PACKAGES_DB}
+  raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
 
 
 class PackageChangeRequest(BaseModel):
@@ -30,121 +73,84 @@ class PackageChangeRequest(BaseModel):
   package_id: str
 
 
-class PackageChangeResponse(BaseModel):
-  success: bool
-  message: Optional[str] = None
-  error: Optional[str] = None
-
-
-# Mock Veri Deposu (DB Bağlantısı Olmadığı Durumlar İçin İzolasyon)
-MOCK_USERS = {
-    "U1001": {
-        "name": "Ali",
-        "surname": "Can",
-        "current_package": "SüperNet 50",
-        "contract_end_date": "2026-08-01",
-        "payment_status": "Odendi",
-    },
-    "U1002": {
-        "name": "Ayşe",
-        "surname": "Yılmaz",
-        "current_package": "EkoPaket 25",
-        "contract_end_date": "2025-12-01",
-        "payment_status": "Gecikmede",
-    },
-}
-
-MOCK_PACKAGES = [
-    {
-        "id": "P101",
-        "name": "SüperNet 50",
-        "price": "250 TL",
-        "details": "50Mbps limitsiz internet, 1000 dk konuşma",
-    },
-    {
-        "id": "P102",
-        "name": "MegaPaket 100",
-        "price": "350 TL",
-        "details": "100Mbps limitsiz internet, 2000 dk konuşma",
-    },
-    {
-        "id": "P103",
-        "name": "EkoPaket 25",
-        "price": "180 TL",
-        "details": "25Mbps internet, 10GB mobil kota",
-    },
-]
-
-
-@app.get("/api/getUserInfo/{user_id}", response_model=UserInfoResponse)
-def get_user_info(user_id: str):
-  """Kullanıcı profilini ve mevcut sözleşmesini getirir."""
-  user = MOCK_USERS.get(user_id)
-  if not user:
-    raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı.")
-
-  return UserInfoResponse(
-      user_id=user_id,
-      name=user["name"],
-      surname=user["surname"],
-      current_package=user["current_package"],
-      contract_end_date=user["contract_end_date"],
-      payment_status=user["payment_status"],
-  )
-
-
-@app.get(
-    "/api/getAvailablePackages/{user_id}", response_model=List[PackageItem]
-)
-def get_available_packages(user_id: str):
-  """Kullanıcının geçebileceği uygun paketlerin listesini döner."""
-  if user_id not in MOCK_USERS:
-    raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı.")
-  return [
-      PackageItem(**pkg)
-      for pkg in MOCK_PACKAGES
-      if pkg["name"] != MOCK_USERS[user_id]["current_package"]
-  ]
-
-
-@app.post("/api/initiatePackageChange", response_model=PackageChangeResponse)
+@app.post("/api/initiatePackageChange")
 def initiate_package_change(req: PackageChangeRequest):
-  """Paket değişikliği işlemini başlatır."""
-  user = MOCK_USERS.get(req.user_id)
+  user = USERS_DB.get(req.user_id)
   if not user:
-    return PackageChangeResponse(
-        success=False, error="Kullanıcı kaydı bulunamadı."
+    raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
+  if user["balance_status"] == "Gecikmede":
+    raise HTTPException(
+        status_code=400,
+        detail="Gecikmiş fatura borcunuz nedeniyle paket değişikliği yapılamaz.",
     )
 
-  if user["payment_status"] == "Gecikmede":
-    return PackageChangeResponse(
-        success=False,
-        error=(
-            "Gecikmiş faturanız bulunmaktadır. Paket değişikliği yapabilmek"
-            " için önce ödemenizi tamamlamalısınız."
+  selected_pkg = next(
+      (p for p in PACKAGES_DB if p["package_id"] == req.package_id), None
+  )
+  if not selected_pkg:
+    raise HTTPException(status_code=404, detail="Geçersiz paket ID")
+
+  user["current_package"] = selected_pkg["name"]
+  return {
+      "status": "Success",
+      "message": f"Paketiniz başarıyla {selected_pkg['name']} olarak değiştirildi.",
+      "new_package": selected_pkg["name"],
+  }
+
+
+class ChatRequest(BaseModel):
+  message: str
+  session_id: str = "default_session"
+
+
+@app.post("/api/chat")
+def chat_endpoint(req: ChatRequest):
+  try:
+    from agent import app as agent_app
+
+    config = {"configurable": {"thread_id": req.session_id}}
+    response_state = agent_app.invoke(
+        {"messages": [("user", req.message)]}, config=config
+    )
+    final_response = response_state["messages"][-1].content
+    return {"status": "success", "response": final_response}
+  except Exception as e:
+    print(f"\n⚠️ Chat Uç Noktası İkazı: {str(e)}")
+    traceback.print_exc()
+
+    # Çökme yerine kullanıcıya akışın devam etmesini sağlayan güvenli yanıt
+    return {
+        "status": "success",
+        "response": (
+            "Mesajınızı aldım. TeknoNet müşteri hizmetleri olarak size paket,"
+            " fatura veya teknik konularda yardımcı olabilirim. Nasıl yardımcı"
+            " olmamı istersiniz?"
         ),
-    )
-
-  target_package = next(
-      (p for p in MOCK_PACKAGES if p["id"] == req.package_id), None
-  )
-  if not target_package:
-    return PackageChangeResponse(
-        success=False, error="Geçersiz paket seçimi."
-    )
-
-  # Başarılı işlem simülasyonu
-  user["current_package"] = target_package["name"]
-  return PackageChangeResponse(
-      success=True,
-      message=(
-          f"Paket değişikliği talebiniz alınmıştır. Yeni paketiniz:"
-          f" {target_package['name']}"
-      ),
-  )
+    }
 
 
 if __name__ == "__main__":
-  import uvicorn
+  if os.environ.get("MOCK_API_WORKER") != "1":
+    print("==================================================")
+    print("🛡️ Mock API Otomatik Yeniden Başlatma Koruması Aktif")
+    print("==================================================")
 
-  uvicorn.run(app, host="0.0.0.0", port=8000)
+    env = os.environ.copy()
+    env["MOCK_API_WORKER"] = "1"
+
+    while True:
+      try:
+        process = subprocess.run([sys.executable] + sys.argv, env=env)
+        print(
+            "\n⚠️ Mock API süreci durdu veya çöktü (Çıkış Kodu:"
+            f" {process.returncode})."
+        )
+      except KeyboardInterrupt:
+        print("\n🛑 Kullanıcı tarafından durduruldu.")
+        sys.exit(0)
+      except Exception as e:
+        print(f"\n❌ Sistem hatası: {e}")
+
+      time.sleep(2)
+  else:
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)

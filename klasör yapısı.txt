@@ -5,7 +5,8 @@ teknofest-tddi-2025/
 ├── schema.sql
 ├── mock_api.py          (1. Hafta)
 ├── ingest_faq.py        (1. Hafta)
-├── requirements.txt     (Güncellendi)
-├── tools.py             (Yeni - LangChain Araçları)
-├── agent.py             (Yeni - LangGraph Ajan Akışı)
-└── test_agent.py        (Yeni - Bağlam Değişimi & Test Scripti)
+├── tools.py             (2. Hafta)
+├── agent.py             (3. Hafta - Düşünce Adımları & Hata Yönetimi İle Güncellendi)
+├── test_agent.py        (2. Hafta)
+├── requirements.txt     (3. Hafta - Streamlit Eklendi)
+└── app.py               (3. Hafta - Yeni: Streamlit Demo Arayüzü)

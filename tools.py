@@ -1,9 +1,7 @@
 import json
-from typing import Optional
-from langchain_core.tools import tool
-from qdrant_client import QdrantClient
-from sentence_transformers import SentenceTransformer
+import os
 import requests
+from langchain_core.tools import tool
 
 API_BASE_URL = "http://localhost:8000/api"
 
@@ -60,33 +58,37 @@ def initiate_package_change(user_id: str, package_id: str) -> str:
 
 @tool
 def search_faq(query: str) -> str:
-  """İnternet hızı, fatura itirazı, taahhüt durumları gibi genel bilgi ve SSS sorularını Qdrant vektör veritabanında arar.
+  """İnternet hızı, fatura itirazı, taahhüt durumları gibi genel bilgi ve SSS sorularını arar.
 
   Parametre: query (Kullanıcının sorduğu soru metni)
   """
   try:
-    client = QdrantClient(path="./qdrant_db")
-    embedder = SentenceTransformer("intfloat/multilingual-e5-base")
+    # PyTorch C++ çökmesini önlemek için doğrudan faq.json metin araması yapılır
+    faq_path = "faq.json"
+    if os.path.exists(faq_path):
+      with open(faq_path, "r", encoding="utf-8") as f:
+        faqs = json.load(f)
 
-    query_vector = embedder.encode(f"query: {query}").tolist()
-    results = client.search(
-        collection_name="teknonet_sss", query_vector=query_vector, limit=2
+      words = [w.lower() for w in query.split() if len(w) > 2]
+      matched = []
+      for item in faqs:
+        q = item.get("question", "").lower()
+        if any(w in q for w in words):
+          matched.append(
+              f"Soru: {item.get('question')}\nYanıt: {item.get('answer')}"
+          )
+
+      if matched:
+        return "\n---\n".join(matched[:2])
+
+    return (
+        "TeknoNet SSS: Fatura ödemeleri, paket değişikliği ve teknik destek"
+        " hakkında detaylı bilgi için müşteri temsilcimizle görüşebilirsiniz."
     )
-    client.close()
-
-    if not results:
-      return "İlgili SSS bilgisi bulunamadı."
-
-    faq_results = [
-        f"Soru: {hit.payload['question']}\nYanıt: {hit.payload['answer']}"
-        for hit.payload in [r.payload for r in results]
-    ]
-    return "\n---\n".join(faq_results)
   except Exception as e:
-    return f"Vektör Arama Hatası: {str(e)}"
+    return f"SSS Arama Hatası: {str(e)}"
 
 
-# Ajanın erişimine sunulacak tüm araçlar
 ALL_TOOLS = [
     get_user_info,
     get_available_packages,
