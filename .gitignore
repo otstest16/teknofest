@@ -1,0 +1,14 @@
+# Sanal Ortam
+venv/
+.venv/
+env/
+
+# Python Önbellek
+__pycache__/
+*.py[cod]
+
+# Yerel Qdrant Veritabanı Dosyaları (Devasa boyuta ulaşmaması için)
+qdrant_db/
+
+# Ortam Değişkenleri
+.env

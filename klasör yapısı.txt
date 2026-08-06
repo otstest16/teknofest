@@ -1,0 +1,6 @@
+Teknofest_Proje/
+├── docker-compose.yml
+├── schema.sql
+├── mock_api.py
+├── ingest_faq.py
+└── requirements.txt
