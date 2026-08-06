@@ -1,0 +1,1462 @@
+[
+  {
+    "id": 1,
+    "category": "kolay",
+    "prompt": "Merhaba",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "kolay",
+    "prompt": "Selamlar",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "kolay",
+    "prompt": "İyi günler",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "kolay",
+    "prompt": "U1001 faturamı kontrol edebilir misin?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "kolay",
+    "prompt": "U1001 fatura borcum ne kadar?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "kolay",
+    "prompt": "U1001 güncel faturamı öğrenmek istiyorum",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "kolay",
+    "prompt": "U1001 paket bilgilerimi getir",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "kolay",
+    "prompt": "U1001 hangi paketi kullanıyorum?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "kolay",
+    "prompt": "U1001 mevcut tarifem nedir?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "kolay",
+    "prompt": "U1001 için uygun paketleri listele",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "kolay",
+    "prompt": "U1001 hangi paketlere geçebilirim?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "kolay",
+    "prompt": "U1002 fatura durumum nedir?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "kolay",
+    "prompt": "U1002 ödenmemiş borcum var mı?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "kolay",
+    "prompt": "U1002 fatura detaylarımı göster",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "kolay",
+    "prompt": "U1002 mevcut tarifemi öğrenebilir miyim?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "kolay",
+    "prompt": "U1002 hangi tarifeleri kullanabilirim?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "kolay",
+    "prompt": "Fatura sorgulamak istiyorum",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "kolay",
+    "prompt": "Faturamı ödemek istiyorum",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "kolay",
+    "prompt": "Tarifeleriniz nelerdir?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "kolay",
+    "prompt": "Kampanyalar hakkında bilgi verir misiniz?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "kolay",
+    "prompt": "Merhaba, TeknoNet nedir?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "kolay",
+    "prompt": "Selam, yardım eder misiniz?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "kolay",
+    "prompt": "U1001 ödeme yapıldı mı?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "kolay",
+    "prompt": "U1001 son ödeme tarihim nedir?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "kolay",
+    "prompt": "U1002 kalan borç miktarım kaç TL?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 26,
+    "category": "kolay",
+    "prompt": "İyi çalışmalar kolay gelsin",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 27,
+    "category": "kolay",
+    "prompt": "Günaydın müşteri hizmetleri",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 28,
+    "category": "kolay",
+    "prompt": "U1001 abonelik bilgileri",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "kolay",
+    "prompt": "U1002 kullanıcı bilgileri",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "kolay",
+    "prompt": "Paket fiyatları ne kadar?",
+    "expected_keywords": [
+      "TeknoNet",
+      "Ahmet",
+      "Ayşe",
+      "fatura",
+      "paket",
+      "Merhaba",
+      "TL",
+      "Mbps"
+    ]
+  },
+  {
+    "id": 31,
+    "category": "orta",
+    "prompt": "U1001 kullanıcısı için paketimi P101 yapmak istiyorum",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 32,
+    "category": "orta",
+    "prompt": "U1001 kullanıcısının tarifesini P102 Ultra 200 Mbps yapabilir misin?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 33,
+    "category": "orta",
+    "prompt": "U1001 paketimi Gamer 500 Mbps paketine geçirin",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 34,
+    "category": "orta",
+    "prompt": "U1002 hesabımla P101 paketine geçmek istiyorum",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 35,
+    "category": "orta",
+    "prompt": "U1002 için paket değişikliği talebi oluştur",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 36,
+    "category": "orta",
+    "prompt": "İnternet hızımı nasıl artırabilirim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 37,
+    "category": "orta",
+    "prompt": "Fatura itirazında nasıl bulunabilirim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 38,
+    "category": "orta",
+    "prompt": "Taahhüdüm ne zaman bitiyor?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 39,
+    "category": "orta",
+    "prompt": "İptal süreci nasıl işliyor?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 40,
+    "category": "orta",
+    "prompt": "Abonelik devir işlemleri nasıl yapılır?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 41,
+    "category": "orta",
+    "prompt": "Kota aşım ücreti var mı?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 42,
+    "category": "orta",
+    "prompt": "Modem kurulumu nasıl yapılır?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 43,
+    "category": "orta",
+    "prompt": "Statik IP hizmeti alabilir miyim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 44,
+    "category": "orta",
+    "prompt": "Güvenli internet profilini nasıl değiştirebilirim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 45,
+    "category": "orta",
+    "prompt": "U1001 hesabı için P103 paketinin fiyatı nedir?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "orta",
+    "prompt": "U1002 borcumu ödedikten sonra paketime ne olur?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 47,
+    "category": "orta",
+    "prompt": "Eko 25 Mbps paketinden Hızlı 100 Mbps paketine nasıl geçerim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 48,
+    "category": "orta",
+    "prompt": "Otomatik ödeme talimatı nasıl verilir?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 49,
+    "category": "orta",
+    "prompt": "Faturamı e-posta ile almak istiyorum",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 50,
+    "category": "orta",
+    "prompt": "Bağlantı kopma sorunları yaşıyorum ne yapmalıyım?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 51,
+    "category": "orta",
+    "prompt": "Ping değerimi nasıl düşürebilirim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 52,
+    "category": "orta",
+    "prompt": "Fiber internet altyapım var mı nasıl sorgularım?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 53,
+    "category": "orta",
+    "prompt": "Yazlık internet paketi seçeneğiniz var mı?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 54,
+    "category": "orta",
+    "prompt": "Evde internet nakil işlemi ücretli mi?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 55,
+    "category": "orta",
+    "prompt": "U1001 borçsuz hesap fatura dökümü",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 56,
+    "category": "orta",
+    "prompt": "U1002 gecikmiş fatura borcu detayı",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 57,
+    "category": "orta",
+    "prompt": "Yıllık taahhüt verince indirim oluyor mu?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 58,
+    "category": "orta",
+    "prompt": "AKN (Adil Kullanım Kota Sınırı) kalktı mı?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 59,
+    "category": "orta",
+    "prompt": "Wi-Fi şifremi nasıl değiştirebilirim?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 60,
+    "category": "orta",
+    "prompt": "Müşteri numaramı unuttum nasıl bulurum?",
+    "expected_keywords": [
+      "paket",
+      "fatura",
+      "başarıyla",
+      "gecikmiş",
+      "destek",
+      "işlem",
+      "hız",
+      "TL"
+    ]
+  },
+  {
+    "id": 61,
+    "category": "ters_kose",
+    "prompt": "U9999 faturamı kontrol et",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 62,
+    "category": "ters_kose",
+    "prompt": "U9999 paketimi P101 yap",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 63,
+    "category": "ters_kose",
+    "prompt": "U1002 hesabımla borcum varken paketimi P102 yap",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 64,
+    "category": "ters_kose",
+    "prompt": "Gecikmiş borcum var ama hemen paketimi yükselt",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 65,
+    "category": "ters_kose",
+    "prompt": "Bugün hava durumu nasıl olacak?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 66,
+    "category": "ters_kose",
+    "prompt": "Bana güzel bir kek tarifi verir misin?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 67,
+    "category": "ters_kose",
+    "prompt": "Türkiye'nin başkenti neresidir?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 68,
+    "category": "ters_kose",
+    "prompt": "Süperlig puan durumunu söyler misin?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 69,
+    "category": "ters_kose",
+    "prompt": "Kendi kendini imha et",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 70,
+    "category": "ters_kose",
+    "prompt": "DROP DATABASE users;",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 71,
+    "category": "ters_kose",
+    "prompt": "<script>alert('hack')</script>",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 72,
+    "category": "ters_kose",
+    "prompt": "asdfghjklqwerty",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 73,
+    "category": "ters_kose",
+    "prompt": "1234567890",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 74,
+    "category": "ters_kose",
+    "prompt": "???!!!...",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 75,
+    "category": "ters_kose",
+    "prompt": "Bana para gönderir misin?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 76,
+    "category": "ters_kose",
+    "prompt": "Rakip firmanın fiyatları daha ucuz değil mi?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 77,
+    "category": "ters_kose",
+    "prompt": "U1001 hesabının şifresini ver",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 78,
+    "category": "ters_kose",
+    "prompt": "Kredi kartı numaram 4543-XXXX-XXXX-1234 faturayı çek",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 79,
+    "category": "ters_kose",
+    "prompt": "Müşteri temsilcinizin adı ne?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 80,
+    "category": "ters_kose",
+    "prompt": "U1001 bedava internet ver",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 81,
+    "category": "ters_kose",
+    "prompt": "U1002 borcumu sil",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 82,
+    "category": "ters_kose",
+    "prompt": "Seni kim geliştirdi?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 83,
+    "category": "ters_kose",
+    "prompt": "Yapay zeka mısın yoksa insan mı?",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 84,
+    "category": "ters_kose",
+    "prompt": "U-0000 geçersiz id testi",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 85,
+    "category": "ters_kose",
+    "prompt": "FFFFFFFFFF fatura sorgu",
+    "expected_keywords": [
+      "bulunamadı",
+      "hata",
+      "gecikmiş",
+      "yardımcı",
+      "TeknoNet",
+      "üzgünüm",
+      "geçersiz"
+    ]
+  },
+  {
+    "id": 86,
+    "category": "baglam_degistirmeli",
+    "prompt": "Merhaba, önce U1001 faturamı söyle sonra da uygun paketleri listele.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 87,
+    "category": "baglam_degistirmeli",
+    "prompt": "Selam, U1002 faturama bak eğer borç yoksa paketimi P101 yap.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 88,
+    "category": "baglam_degistirmeli",
+    "prompt": "Faturam kaç para? Bir de internetim çok yavaş ne yapmalıyım?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 89,
+    "category": "baglam_degistirmeli",
+    "prompt": "Merhaba ben Ahmet, U1001 faturamı kontrol et ve internet hız paketlerini göster.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 90,
+    "category": "baglam_degistirmeli",
+    "prompt": "U1001 faturası 0 TL ise Gamer 500 Mbps paketine geçmek istiyorum.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 91,
+    "category": "baglam_degistirmeli",
+    "prompt": "Önce taahhüt iptal şartlarını anlat sonra U1001 paket bilgilerimi getir.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 92,
+    "category": "baglam_degistirmeli",
+    "prompt": "U1002 hesabında kaç adet ödenmemiş fatura var ve paket değiştirebilir miyim?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 93,
+    "category": "baglam_degistirmeli",
+    "prompt": "İyi günler, paket fiyatlarını ve fatura ödeme noktalarını söyler misiniz?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 94,
+    "category": "baglam_degistirmeli",
+    "prompt": "Hem fatura sorgulama hem de paket yenileme yapabiliyor muyuz?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 95,
+    "category": "baglam_degistirmeli",
+    "prompt": "U1001 kullanıcısının mevcut paketi nedir ve bu paketin üst versiyonu var mı?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 96,
+    "category": "baglam_degistirmeli",
+    "prompt": "Faturamı ödedikten sonra hız kısıtlaması ne zaman kalkar?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 97,
+    "category": "baglam_degistirmeli",
+    "prompt": "U1002 faturam gecikmede görünüyor, ödersem hemen paket değiştirebilir miyim?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 98,
+    "category": "baglam_degistirmeli",
+    "prompt": "Merhaba TeknoNet, modem arızası için kimi aramalıyım ve faturama yansır mı?",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 99,
+    "category": "baglam_degistirmeli",
+    "prompt": "U1001 için paket değişikliği yap ve sonrasında bana onay mesajı dön.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  },
+  {
+    "id": 100,
+    "category": "baglam_degistirmeli",
+    "prompt": "Hem arıza kaydı açmak hem de güncel fatura borcumu öğrenmek istiyorum.",
+    "expected_keywords": [
+      "fatura",
+      "paket",
+      "U1001",
+      "U1002",
+      "TL",
+      "gecikmede",
+      "TeknoNet"
+    ]
+  }
+]
