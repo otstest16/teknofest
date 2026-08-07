@@ -1,0 +1,21 @@
+---
+
+### 3. Jüri Demo Videosu Senaryosu (`demo_script.md`)
+
+Jüriye sunulacak maksimum 10 dakikalık videonun çekim planı ve seslendirme metni:
+
+```markdown
+# 🎬 TeknoNet Ajanı - Jüri Demo Videosu Çekim Senaryosu
+
+**Toplam Süre:** 08:30 Dakika  
+**Görsel Format:** Ekran Kaydı (Terminal / Postman / Web UI) + Seslendirme  
+
+---
+
+| Süre | Bölüm | Ekran Görüntüsü | Seslendirme / Konuşma İçeriği |
+|---|---|---|---|
+| **00:00 - 01:00** | **Giriş ve Mimari** | Mimari şeması ve kod yapısının gösterimi. | "Merhaba Sayın Jüri Üyeleri. TeknoNet Müşteri Asistanı, müşterilerin karmaşık taleplerini otonom araçlarla çözen LangGraph tabanlı bir yapay zeka ajanıdır." |
+| **01:00 - 03:00** | **Çok Adımlı Karar Zinciri** | `U1001` için fatura sorgulama ve ardından paket yükseltme talebi. | "Şimdi sistemin çok adımlı karar mekanizmasını izliyoruz. Kullanıcı önce faturasını sorguluyor, ardından mevcut borcu olmadığı için başarıyla P101 paketine geçiriliyor." |
+| **03:00 - 05:00** | **Hata Yönetimi ve Borç Engeli** | `U1002` (Gecikmiş borcu olan kullanıcı) ile paket değişimi denemesi. | "Burada ters köşe bir durum var. U1002 kullanıcısının 450 TL gecikmiş borcu bulunuyor. Ajan borcu tespit ediyor, paket değişimini reddedip güvenli bir şekilde kullanıcıyı yönlendiriyor." |
+| **05:00 - 06:30** | **Bağlam Değişimi (Context Switch)** | Fatura sorarken araya giren "Modem Wi-Fi şifremi nasıl değişirim?" sorusu. | "Sistem bağlam değişimlerini başarıyla yakalıyor. Fatura konusundan teknik desteğe geçildiğinde Qdrant Vektör DB üzerinden doğru bilgi çekilerek yanıt veriliyor." |
+| **06:30 - 08:30** | **Test Otomasyonu & KPI Raporu** | Terminalde `python test_runner.py`

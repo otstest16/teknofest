@@ -1,20 +1,13 @@
-# TEKNOFEST 2025 TDDİ - Çağrı Merkezi Otonom Ajanı
+# 🚀 TeknoNet - Otonom Müşteri Hizmetleri Yapay Zeka Ajanı
 
-## Proje Hakkında
-Bu proje, TEKNOFEST Türkçe Doğal Dil İşleme Yarışması Senaryo Kategorisi kapsamında geliştirilen otonom çağrı merkezi asistanıdır.
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Topic](https://img.shields.io/badge/TEKNOFEST-BilisimVadisi2025-orange.svg)](#)
+[![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](#)
 
-## Kurulum
-1. Sanal ortamı oluşturun ve aktif edin:
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
+TEKNOFEST Türkçe Doğal Dil İşleme Yarışması 2025 kapsamında geliştirilen **TeknoNet Asistanı**, Müşteri Hizmetleri süreçlerinde fatura sorgulama, paket değişimi ve teknik destek süreçlerini otonom araçlar (tools) ve dinamik karar zincirleri ile yöneten otonom bir AI ajanıdır.
 
-2. Bağımlılıkları yükleyin:
-   pip install -r requirements.txt
+---
 
-## Çalıştırma (1. Hafta Servisleri)
-1. Mock API Backend'ini Başlatma:
-   python mock_api.py
-   (API Dökümantasyonu: http://localhost:8000/docs)
+## 🏗️ Sistem Mimarisi
 
-2. Qdrant Vektör Veritabanına SSS Yükleme:
-   python ingest_faq.py
+Sistem, gelen kullanıcı girdilerini niyet analizine (Intent Analysis) tabi tutar, gerekli durumda Qdrant Vektör Veritabanı üzerinden RAG (Retrieval-Augmented Generation) mekanizmasını çalıştırır veya FastAPI üzerinden Müşteri/Fatura API'lerine güvenli araç çağrıları (Tool Calls) gerçekleştirir.

@@ -1,0 +1,23 @@
+---
+
+## 🧰 Açık Kaynak Bileşenler
+
+| Bileşen | Kullanılan Teknoloji / Kütüphane | Kullanım Amacı |
+|---|---|---|
+| **Orkestrasyon** | `LangChain` / `LangGraph` | Ajan durum yönetimi ve dinamik karar zincirleri |
+| **Vektör Veritabanı** | `Qdrant` | SSS ve teknik destek dokümanlarının semantic arama indeksi |
+| **API Framework** | `FastAPI` & `Uvicorn` | Yüksek performanslı asenkron REST API sunucusu |
+| **Embedding Modeli** | `sentence-transformers/all-MiniLM-L6-v2` | Metinlerin 384 boyutlu vektörlere dönüştürülmesi |
+| **Test & KPI** | `Requests` & `Python Unittest` | 100 Farklı Senaryo için otonom test koşumu |
+
+---
+
+## ⚡ Hızlı Kurulum ve Çalıştırma
+
+### 1. Gereksinimlerin Yüklenmesi
+```bash
+git clone [https://github.com/KULLANICI_ADI/teknonet-asistan.git](https://github.com/KULLANICI_ADI/teknonet-asistan.git)
+cd teknonet-asistan
+python -m venv .venv
+source .venv/bin/activate  # Windows için: .venv\Scripts\activate
+pip install -r requirements.txt
